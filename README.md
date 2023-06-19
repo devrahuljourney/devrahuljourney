@@ -22,7 +22,7 @@ alt="rahulkumartwt" /></a> </p>
 <p align="left">
 <a href="https://codepen.io/devloper_rahul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="devloper_rahul" height="30" width="40" /></a>
 <a href="https://twitter.com/rahulkumartwt" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rahulkumartwt" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/www.linkedin.com/in/rahul/rkvrahul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/rahul/rkvrahul" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/rkvrahul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/rahul/rkvrahul" height="30" width="40" /></a>
 <a href="https://www.leetcode.com/devloper_rahul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="devloper_rahul" height="30" width="40" /></a>
 </p>
 
