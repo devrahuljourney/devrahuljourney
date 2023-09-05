@@ -1,5 +1,5 @@
-[![MasterHead](https://propulsive.in/assets/img/service-icon/web.gif
-)]
+![MasterHead](https://propulsive.in/assets/img/service-icon/web.gif
+)
 <h1 align="center">Hi 👋, I'm Rahul Kumar Verma</h1>
 <h3 align="center">A passionate Full stack developer from India</h3>
 <img align="right" alt="Coding" width="400" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c00f6105775659.5f84899401909.gif">
@@ -11,7 +11,7 @@
 
 - 🌱 I’m currently learning **MERN Stack Web Devlopement || java DSA**
 
-- 👨‍💻 All of my projects are available at [https://rahulprofilecard.netlify.app/](https://rahulprofilecard.netlify.app/)
+- 👨‍💻 Connect with me[https://rahulprofilecard.netlify.app/](https://rahulprofilecard.netlify.app/)
 
 - 💬 Ask me about **Java , Html, css , TailwindCss , Javascript, React**
 
