@@ -11,7 +11,7 @@
 
 - 🌱 I’m currently learning **MERN Stack Web Devlopement || java DSA**
 
-- 👨‍💻 Connect with me[https://rahulprofilecard.netlify.app/](https://rahulprofilecard.netlify.app/)
+- 👨‍💻 [Connect with me](https://rahulprofilecard.netlify.app/)
 
 - 💬 Ask me about **Java , Html, css , TailwindCss , Javascript, React**
 
