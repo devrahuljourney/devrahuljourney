@@ -21,11 +21,11 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://codepen.io/devloper_rahul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="devloper_rahul" height="30" width="40" /></a>
-<a href="https://twitter.com/rahulkumartwt" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rahulkumartwt" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/www.linkedin.com/in/rahul/rkvrahul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/rahul/rkvrahul" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/devloper_rahul" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="devloper_rahul" height="30" width="40" /></a>
-<a href="https://auth.geeksforgeeks.org/user/rahulkumzw7u" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="rahulkumzw7u" height="30" width="40" /></a>
+<a href="https://codepen.io/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="devloper_rahul" height="30" width="40" /></a>
+<a href="https://twitter.com/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rahulkumartwt" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/www.linkedin.com/in/rahul/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/rahul/devrahuljourney" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="devloper_rahul" height="30" width="40" /></a>
+<a href="https://auth.geeksforgeeks.org/user/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="rahulkumzw7u" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
