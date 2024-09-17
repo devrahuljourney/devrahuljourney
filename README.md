@@ -1,4 +1,5 @@
-![MasterHead](https://drive.google.com/file/d/152IknajbXeOMAcArbbG0Qo7RmWgt4h2N/view?usp=sharing
+![MasterHead](Creative and Minimal Portfolio Presentation](https://github.com/user-attachments/assets/2e68b05f-7df4-469c-9cdf-d1aa005dfbe4)
+
 )
 
 # 💫 About Me:
