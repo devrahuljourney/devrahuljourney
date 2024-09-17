@@ -1,4 +1,4 @@
-![MasterHead](https://propulsive.in/assets/img/service-icon/web.gif
+![MasterHead](https://drive.google.com/file/d/152IknajbXeOMAcArbbG0Qo7RmWgt4h2N/view?usp=sharing
 )
 
 # 💫 About Me:
