@@ -1,6 +1,5 @@
-![MasterHead](Creative and Minimal Portfolio Presentation](https://github.com/user-attachments/assets/2e68b05f-7df4-469c-9cdf-d1aa005dfbe4)
+![Creative and Minimal Portfolio Presentation](https://github.com/user-attachments/assets/64376240-3965-4688-bfcc-1127c5432f98)
 
-)
 
 # 💫 About Me:
 <h1 align="center">Hi 👋, I'm Rahul Kumar Verma</h1>
