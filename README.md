@@ -1,45 +1,86 @@
+<h1 align="center" style="color:#B9FD50;">🚀 Rahul Kumar Verma | Full Stack Developer 🚀</h1>
+<h3 align="center" style="color:#B9FD50;">Turning ideas into reality with code</h3>
+
 ![Creative and Minimal Portfolio Presentation](https://github.com/user-attachments/assets/64376240-3965-4688-bfcc-1127c5432f98)
 
 
-# 💫 About Me:
-<h1 align="center">Hi 👋, I'm Rahul Kumar Verma</h1>
-<h3 align="center">A passionate Full stack developer from India</h3>
-<img align="right" alt="Coding" width="400" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3c00f6105775659.5f84899401909.gif">
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=rahulkumarv269&label=Profile%20views&color=0e75b6&style=flat" alt="rahulkumarv269" /> </p>
 
-🔭 I’m currently working on MERN Stack Project.<br>👯 I’m looking to collaborate on Open Source Project.<br>🤝 I’m looking for help with Web Developer.<br>🌱 I’m currently learning MERN Stack Developement and DSA in Java.<br>💬 Ask me about Full  Stack Web Developer<br>⚡ Fun fact : I think i'm funny 😂.
-
-
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/devrahhuljourney) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/devrahuljourney) 
-<a href="https://codepen.io/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="devloper_rahul" height="30" width="40" /></a>
-<a href="https://twitter.com/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rahulkumartwt" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/www.linkedin.com/in/rahul/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/rahul/devrahuljourney" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="devloper_rahul" height="30" width="40" /></a>
-<a href="https://auth.geeksforgeeks.org/user/devrahuljourney" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="rahulkumzw7u" height="30" width="40" /></a>
-
-
-# 💻 Tech Stack:
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=plastic&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E) ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=plastic&logo=github&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=plastic&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=plastic&logo=vercel&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=plastic&logo=JSON%20web%20tokens) ![Green Sock](https://img.shields.io/badge/green%20sock-88CE02?style=plastic&logo=greensock&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=plastic&logo=node.js&logoColor=white) ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=plastic&logo=nodemon&logoColor=%BBDEAD) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=plastic&logo=npm&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=plastic&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=plastic&logo=tailwind-css&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=plastic&logo=figma&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=plastic&logo=Canva&logoColor=white)
-
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=devrahuljourney&limit=5&theme=dracula&combine_all_yearly_contributions=true)
-
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=devrahuljourney&theme=dark&hide_border=false&include_all_commits=false&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=devrahuljourney&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=devrahuljourney&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
-
-
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-
-### 😂 Random Dev Meme
-<img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=devrahuljourney&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+</p>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=devrahuljourney&icon=5&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 🌟 About Me:
+- 🔭 Worked on multiple projects: **EdTech platform**, **E-commerce website**, **Screen-time management app**, **Rich text editor**
+- 💼 Experienced **Freelancer** | Worked on multiple **client projects**
+- 🌎 Building a **Screen Time Tracker App** for digital well-being
+- 🔥 Passionate about **Animations & Modern UI**
+- 📱 Developing **React Native Apps**
+- 🎨 Exploring **Next.js & Tailwind CSS**
+- 💡 Learning **System Design & AI for Web**
+- 💬 Ask me about **MERN Stack, React Native, Next.js, Web Development, Java DSA**
+- ⚡ Fun Fact: I believe I am funny 😂
+
+---
+
+## 🚀 Tech Stack:
+### 🎨 Frontend:
+![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React Native](https://img.shields.io/badge/React%20Native-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+### ⚙️ Backend:
+![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=white)
+
+### 🔗 Database:
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-%23FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=white)
+
+### 🎨 UI/UX:
+![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
+
+---
+
+## 📊 GitHub Stats:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=devrahuljourney&theme=dark&hide_border=false&include_all_commits=true&count_private=true&title_color=#B9FD50&icon_color=#B9FD50&text_color=white" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=devrahuljourney&theme=dark&hide_border=false&fire=#B9FD50" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devrahuljourney&theme=dark&hide_border=false&layout=compact&title_color=#B9FD50" />
+</p>
+
+---
+
+## 🔗 Connect with Me:
+<p align="center">
+<a href="https://linkedin.com/in/devrahhuljourney"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://twitter.com/devrahuljourney"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" /></a>
+<a href="https://www.leetcode.com/devrahuljourney"><img src="https://img.shields.io/badge/LeetCode-000?style=for-the-badge&logo=leetcode&logoColor=yellow" /></a>
+<a href="https://auth.geeksforgeeks.org/user/devrahuljourney"><img src="https://img.shields.io/badge/GeeksforGeeks-008000?style=for-the-badge&logo=geeksforgeeks&logoColor=white" /></a>
+</p>
+
+---
+
+## 🎯 Interests & Goals:
+- 🚀 **Building scalable applications**
+- 🎨 **Enhancing UI/UX with animations & motion effects**
+- 📱 **Creating cross-platform apps using React Native**
+- 🤖 **Exploring AI & ML for web development**
+- 💡 **Learning System Design & Performance Optimization**
+
+---
+
+## 🎶 My Coding Music 🎧:
+[![Spotify](https://novatorem.vercel.app/api/spotify)](https://open.spotify.com/user/yourspotifyid)
+
+---
+
+## ✍️ Dev Quote:
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+
+---
+
+[![](https://visitcount.itsvg.in/api?id=devrahuljourney&icon=5&color=0)](https://visitcount.itsvg.in)
