@@ -1,7 +1,7 @@
 <h1 align="center" style="color:#B9FD50;">🚀 Rahul Kumar Verma | Full Stack Developer 🚀</h1>
 <h3 align="center" style="color:#B9FD50;">Transforming ideas into scalable digital experiences</h3>
 
-![Portfolio Banner](https://github.com/user-attachments/assets/64376240-3965-4688-bfcc-1127c5432f98)
+![Portfolio Banner](https://github.com/user-attachments/assets/bfd95509-131c-44e8-b443-ecffff38a660)
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=devrahuljourney&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
@@ -38,7 +38,6 @@ Keeps existing styles intact — no setup needed. Trigger with `Alt + S` for qui
 | [**CoSkill – Skill Sharing App**](https://www.youtube.com/shorts/RPMTcxZlLVY) | React Native + Node.js app for mutual skill sharing, mock interviews, and session feedback. Features Redis caching and real-time chat. | React Native, Node.js, Express, MongoDB, Redis |
 | [**EdTech Platform**](https://ed-tech-frontend-delta.vercel.app/) | Course-based web app with instructor/student dashboards, Razorpay integration, and analytics. | React.js, Node.js, Express, MongoDB |
 | [**Friendify – Social Media App**](https://friendify-alpha.vercel.app/) | Real-time social app with posts, likes, comments, and WebSocket-based updates. | MERN Stack, WebSocket |
-| [**FurniShop – Furniture Store**](https://github.com/devrahuljourney/FurniShop) | Full e-commerce solution with CSV bulk uploads, Cashfree payments, and automated invoices. | MERN Stack, Cloudflare, Cashfree API |
 
 ---
 
