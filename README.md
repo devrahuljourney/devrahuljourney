@@ -38,21 +38,22 @@ full stack developer · mern · react native
 
 ---
 
-### Trophies
+### Stats
 
 <div align="center">
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=devrahuljourney&theme=darkhub&no-frame=true&no-bg=true&row=1&column=7)](https://github.com/devrahuljourney)
+![Stats](https://github-readme-stats.vercel.app/api?username=devrahuljourney&theme=github_dark&hide_border=true&show_icons=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=devrahuljourney&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&layout=compact)
 
 </div>
 
 ---
 
-### Metrics
+### Streak
 
 <div align="center">
 
-![Metrics](https://metrics.lecoq.io/devrahuljourney?template=classic&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&config.timezone=Asia%2FKolkata&config.display=large&config.animations=true&config.padding=0)
+[![Streak](https://streak-stats.demolab.com?user=devrahuljourney&theme=github-dark-blue&hide_border=true&background=161b22&ring=58a6ff&fire=58a6ff&currStreakLabel=e6edf3&sideLabels=8b949e&dates=8b949e)](https://github.com/devrahuljourney)
 
 </div>
 
