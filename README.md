@@ -1,6 +1,7 @@
+<div align="center">
+
 ![Banner](https://github.com/user-attachments/assets/bfd95509-131c-44e8-b443-ecffff38a660)
 
-<div align="center">
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3500&pause=1200&color=AAAAAA&center=true&vCenter=true&width=500&lines=full+stack+dev.+mobile+apps.+real+products.;mern+%2B+react+native+%2B+redis.;building+coskill+%E2%80%94+skill+sharing+that+actually+works.)](https://git.io/typing-svg)
 
@@ -15,7 +16,7 @@ full stack developer · mern · react native
 
 ### VS Code Extension
 
-**[React Native Style Injector](https://marketplace.visualstudio.com/items?itemName=rahul-dev.rn-style-injector)** — used by **200+ developers**. auto-injects missing styles into `StyleSheet.create`. trigger with `Alt+S`. no setup needed.
+**[React Native Style Injector](https://marketplace.visualstudio.com/items?itemName=rahul-dev.rn-style-injector)** — used by **350+ developers**. auto-injects missing styles into `StyleSheet.create`. trigger with `Alt+S`. no setup needed.
 
 ![Downloads](https://img.shields.io/visual-studio-marketplace/d/rahul-dev.rn-style-injector?label=downloads&color=3fb950&style=flat-square)
 ![Version](https://img.shields.io/visual-studio-marketplace/v/rahul-dev.rn-style-injector?style=flat-square&color=58a6ff)
@@ -27,10 +28,10 @@ full stack developer · mern · react native
 <!-- IMPORTANT: Replace repo names below with your exact GitHub repo slugs if any show "not found" -->
 <div align="center">
 
-[![CoSkill](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=CoSkill&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/CoSkill)
-[![EdTech](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=ed-tech-frontend&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/ed-tech-frontend)
+[![CoSkill](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=CoSkill_Frontend&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/CoSkill_Frontend)
+[![EdTech](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=EdTech_frontend&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/EdTech_frontend)
 
-[![Friendify](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=friendify&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/friendify)
+[![Friendify](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=Friendify_Frontend&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/Friendify_Frontend)
 [![RN Style Injector](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=rn-style-injector&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/rn-style-injector)
 
 </div>
