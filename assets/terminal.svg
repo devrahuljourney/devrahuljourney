@@ -13,12 +13,12 @@
   <circle cx="54" cy="15" r="5.5" fill="#28c840"/>
 
   <!-- Window title -->
-  <text x="340" y="20" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#484f58">rahul@dev — bash</text>
+  <text x="340" y="20" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#484f58">devrahuljourney — bash</text>
 
   <!-- Line 1: whoami command -->
   <text font-family="'Courier New', monospace" font-size="13" opacity="0">
     <animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.01s" fill="freeze"/>
-    <tspan x="18" y="58" fill="#3fb950">rahul@dev</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ whoami</tspan>
+    <tspan x="18" y="58" fill="#3fb950">devrahuljourney</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ whoami</tspan>
   </text>
 
   <!-- Line 2: whoami output -->
@@ -30,7 +30,7 @@
   <!-- Line 3: ls projects -->
   <text font-family="'Courier New', monospace" font-size="13" opacity="0">
     <animate attributeName="opacity" values="0;1" begin="2.1s" dur="0.01s" fill="freeze"/>
-    <tspan x="18" y="108" fill="#3fb950">rahul@dev</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ ls projects/</tspan>
+    <tspan x="18" y="108" fill="#3fb950">devrahuljourney</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ ls projects/</tspan>
   </text>
 
   <!-- Line 4: ls output -->
@@ -42,7 +42,7 @@
   <!-- Line 5: cat stack -->
   <text font-family="'Courier New', monospace" font-size="13" opacity="0">
     <animate attributeName="opacity" values="0;1" begin="3.6s" dur="0.01s" fill="freeze"/>
-    <tspan x="18" y="158" fill="#3fb950">rahul@dev</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ cat stack.txt</tspan>
+    <tspan x="18" y="158" fill="#3fb950">devrahuljourney</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ cat stack.txt</tspan>
   </text>
 
   <!-- Line 6: stack output -->
@@ -54,11 +54,11 @@
   <!-- Line 7: final prompt -->
   <text font-family="'Courier New', monospace" font-size="13" opacity="0">
     <animate attributeName="opacity" values="0;1" begin="5.1s" dur="0.01s" fill="freeze"/>
-    <tspan x="18" y="208" fill="#3fb950">rahul@dev</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ </tspan>
+    <tspan x="18" y="208" fill="#3fb950">devrahuljourney</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ </tspan>
   </text>
 
   <!-- Blinking cursor -->
-  <rect x="120" y="195" width="8" height="15" fill="#e6edf3" opacity="0">
+  <rect x="166" y="195" width="8" height="15" fill="#e6edf3" opacity="0">
     <animate attributeName="opacity" values="1;0" calcMode="discrete" begin="5.1s" dur="1.0s" repeatCount="indefinite"/>
   </rect>
 
