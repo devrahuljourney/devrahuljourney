@@ -2,6 +2,7 @@
 
 ![Banner](https://github.com/user-attachments/assets/bfd95509-131c-44e8-b443-ecffff38a660)
 
+![Terminal](assets/terminal.svg)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3500&pause=1200&color=AAAAAA&center=true&vCenter=true&width=500&lines=full+stack+dev.+mobile+apps.+real+products.;mern+%2B+react+native+%2B+redis.;building+coskill+%E2%80%94+skill+sharing+that+actually+works.)](https://git.io/typing-svg)
 
@@ -9,6 +10,8 @@
 full stack developer · mern · react native
 
 [rahulverma.site](https://www.rahulverma.site) · [linkedin](https://linkedin.com/in/devrahuljourney) · [twitter](https://twitter.com/devrahuljourney) · [leetcode](https://leetcode.com/devrahuljourney) · devrahulverma9162@gmail.com
+
+![Profile Views](https://komarev.com/ghpvc/?username=devrahuljourney&color=58a6ff&style=flat-square&label=profile+views)
 
 </div>
 
@@ -59,6 +62,13 @@ full stack developer · mern · react native
 
 ---
 
+### WakaTime
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+---
+
 ### Stack
 
 ![React](https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB)
@@ -82,6 +92,13 @@ full stack developer · mern · react native
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=devrahuljourney&bg_color=0d1117&color=8b949e&line=58a6ff&point=58a6ff&hide_border=true&area=true&area_color=58a6ff)](https://github.com/devrahuljourney)
 
 </div>
+
+---
+
+### Recent Activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 ---
 

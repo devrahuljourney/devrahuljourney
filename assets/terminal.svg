@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 235" width="680" height="235">
+
+  <!-- Terminal background -->
+  <rect width="680" height="235" rx="8" fill="#0d1117"/>
+
+  <!-- Title bar -->
+  <rect width="680" height="30" rx="8" fill="#161b22"/>
+  <rect y="22" width="680" height="8" fill="#161b22"/>
+
+  <!-- Traffic lights -->
+  <circle cx="18" cy="15" r="5.5" fill="#ff5f57"/>
+  <circle cx="36" cy="15" r="5.5" fill="#febc2e"/>
+  <circle cx="54" cy="15" r="5.5" fill="#28c840"/>
+
+  <!-- Window title -->
+  <text x="340" y="20" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#484f58">rahul@dev — bash</text>
+
+  <!-- Line 1: whoami command -->
+  <text font-family="'Courier New', monospace" font-size="13" opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.01s" fill="freeze"/>
+    <tspan x="18" y="58" fill="#3fb950">rahul@dev</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ whoami</tspan>
+  </text>
+
+  <!-- Line 2: whoami output -->
+  <text x="18" y="79" font-family="'Courier New', monospace" font-size="13" fill="#8b949e" opacity="0">
+    full stack developer · mern · react native
+    <animate attributeName="opacity" values="0;1" begin="1.3s" dur="0.01s" fill="freeze"/>
+  </text>
+
+  <!-- Line 3: ls projects -->
+  <text font-family="'Courier New', monospace" font-size="13" opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="2.1s" dur="0.01s" fill="freeze"/>
+    <tspan x="18" y="108" fill="#3fb950">rahul@dev</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ ls projects/</tspan>
+  </text>
+
+  <!-- Line 4: ls output -->
+  <text font-family="'Courier New', monospace" font-size="13" opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="2.8s" dur="0.01s" fill="freeze"/>
+    <tspan x="18" y="129" fill="#58a6ff">CoSkill_Frontend    EdTech_frontend    Friendify_Frontend</tspan>
+  </text>
+
+  <!-- Line 5: cat stack -->
+  <text font-family="'Courier New', monospace" font-size="13" opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="3.6s" dur="0.01s" fill="freeze"/>
+    <tspan x="18" y="158" fill="#3fb950">rahul@dev</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ cat stack.txt</tspan>
+  </text>
+
+  <!-- Line 6: stack output -->
+  <text x="18" y="179" font-family="'Courier New', monospace" font-size="13" fill="#8b949e" opacity="0">
+    react · node.js · mongodb · redis · typescript · docker
+    <animate attributeName="opacity" values="0;1" begin="4.3s" dur="0.01s" fill="freeze"/>
+  </text>
+
+  <!-- Line 7: final prompt -->
+  <text font-family="'Courier New', monospace" font-size="13" opacity="0">
+    <animate attributeName="opacity" values="0;1" begin="5.1s" dur="0.01s" fill="freeze"/>
+    <tspan x="18" y="208" fill="#3fb950">rahul@dev</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#e6edf3">$ </tspan>
+  </text>
+
+  <!-- Blinking cursor -->
+  <rect x="120" y="195" width="8" height="15" fill="#e6edf3" opacity="0">
+    <animate attributeName="opacity" values="1;0" calcMode="discrete" begin="5.1s" dur="1.0s" repeatCount="indefinite"/>
+  </rect>
+
+</svg>
