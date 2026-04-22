@@ -1,118 +1,96 @@
-<h1 align="center" style="color:#B9FD50;">🚀 Rahul Kumar Verma | Full Stack Developer 🚀</h1>
-<h3 align="center" style="color:#B9FD50;">Transforming ideas into scalable digital experiences</h3>
+![Banner](https://github.com/user-attachments/assets/bfd95509-131c-44e8-b443-ecffff38a660)
 
-![Portfolio Banner](https://github.com/user-attachments/assets/bfd95509-131c-44e8-b443-ecffff38a660)
+<div align="center">
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=devrahuljourney&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
-</p>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3500&pause=1200&color=AAAAAA&center=true&vCenter=true&width=500&lines=full+stack+dev.+mobile+apps.+real+products.;mern+%2B+react+native+%2B+redis.;building+coskill+%E2%80%94+skill+sharing+that+actually+works.)](https://git.io/typing-svg)
 
----
+### Rahul Kumar Verma
+full stack developer · mern · react native
 
-## 🌟 About Me
-- 💻 **Full Stack Developer (MERN + React Native)** with 1+ year of practical experience  
-- 🔭 Built **EdTech, E-commerce, Screen-Time Tracker**, and **Rich Text Editor** platforms  
-- 💼 Freelanced on multiple end-to-end projects — **UI/UX to backend to deployment**  
-- ⚙️ Skilled in **real-time systems**, **secure payments**, and **access control**  
-- 🎨 Passionate about **clean UI**, **animations**, and **modern design systems**  
-- 💬 Ask me about: **MERN Stack, React Native, Next.js, WebSockets, Redis, and APIs**  
-- 🔥 Exploring **System Design** and **AI Integrations** for web products  
-- 👨‍💻 Focused on building fast, reliable, and user-friendly digital experiences  
+[rahulverma.site](https://www.rahulverma.site) · [linkedin](https://linkedin.com/in/devrahuljourney) · [twitter](https://twitter.com/devrahuljourney) · [leetcode](https://leetcode.com/devrahuljourney) · devrahulverma9162@gmail.com
+
+</div>
 
 ---
 
-## 🧩 VS Code Extension
-### [**React Native Style Injector**](https://marketplace.visualstudio.com/items?itemName=rahul-dev.rn-style-injector)
-Used by **200+ developers**. A lightweight extension that automatically scans your React Native file and injects missing styles into `StyleSheet.create`.  
-Keeps existing styles intact — no setup needed. Trigger with `Alt + S` for quick prototyping.  
-**Open-source**, **super lightweight**, and saves time while building apps.
+### VS Code Extension
 
-![VS Code Extension](https://img.shields.io/visual-studio-marketplace/d/rahul-dev.rn-style-injector?label=Downloads&color=brightgreen&style=for-the-badge)
-![VS Code Extension Version](https://img.shields.io/visual-studio-marketplace/v/rahul-dev.rn-style-injector?style=for-the-badge&color=blue)
+**[React Native Style Injector](https://marketplace.visualstudio.com/items?itemName=rahul-dev.rn-style-injector)** — used by **200+ developers**. auto-injects missing styles into `StyleSheet.create`. trigger with `Alt+S`. no setup needed.
+
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/rahul-dev.rn-style-injector?label=downloads&color=3fb950&style=flat-square)
+![Version](https://img.shields.io/visual-studio-marketplace/v/rahul-dev.rn-style-injector?style=flat-square&color=58a6ff)
 
 ---
 
-## 💼 Featured Projects
-| Project | Description | Tech Stack |
-|----------|--------------|-------------|
-| [**CoSkill – Skill Sharing App**](https://www.youtube.com/shorts/RPMTcxZlLVY) | React Native + Node.js app for mutual skill sharing, mock interviews, and session feedback. Features Redis caching and real-time chat. | React Native, Node.js, Express, MongoDB, Redis |
-| [**EdTech Platform**](https://ed-tech-frontend-delta.vercel.app/) | Course-based web app with instructor/student dashboards, Razorpay integration, and analytics. | React.js, Node.js, Express, MongoDB |
-| [**Friendify – Social Media App**](https://friendify-alpha.vercel.app/) | Real-time social app with posts, likes, comments, and WebSocket-based updates. | MERN Stack, WebSocket |
+### Projects
+
+<!-- IMPORTANT: Replace repo names below with your exact GitHub repo slugs if any show "not found" -->
+<div align="center">
+
+[![CoSkill](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=CoSkill&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/CoSkill)
+[![EdTech](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=ed-tech-frontend&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/ed-tech-frontend)
+
+[![Friendify](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=friendify&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/friendify)
+[![RN Style Injector](https://github-readme-stats.vercel.app/api/pin/?username=devrahuljourney&repo=rn-style-injector&theme=github_dark&hide_border=true&bg_color=161b22&title_color=e6edf3&text_color=8b949e&icon_color=58a6ff)](https://github.com/devrahuljourney/rn-style-injector)
+
+</div>
 
 ---
 
-## 🚀 Tech Stack
+### Trophies
 
-### 🎨 Frontend
-![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React Native](https://img.shields.io/badge/React%20Native-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+<div align="center">
 
-### ⚙️ Backend
-![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=white)
+[![Trophies](https://github-profile-trophy.vercel.app/?username=devrahuljourney&theme=darkhub&no-frame=true&no-bg=true&row=1&column=7)](https://github.com/devrahuljourney)
 
-### 🔗 Database
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-D92C2E?style=for-the-badge&logo=redis&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-%23FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=white)
-
-### 🎨 UI/UX
-![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
+</div>
 
 ---
 
-### 🧠 Currently Exploring
-![NextAuth](https://img.shields.io/badge/NextAuth.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+### Metrics
+
+<div align="center">
+
+![Metrics](https://metrics.lecoq.io/devrahuljourney?template=classic&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&config.timezone=Asia%2FKolkata&config.display=large&config.animations=true&config.padding=0)
+
+</div>
 
 ---
 
-## 🧠 What I’m Learning
-- **System Design** for scalable architectures  
-- **AI + Web** integrations for smarter products  
-- **Performance optimization** using caching & lazy loading  
-- **Next.js 14 + TypeScript** for production-grade apps  
+### Stack
+
+![React](https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB)
+![React Native](https://img.shields.io/badge/React%20Native-0d1117?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=next.js&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=339933)
+![Express](https://img.shields.io/badge/Express-0d1117?style=flat-square&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-0d1117?style=flat-square&logo=mongodb&logoColor=4ea94b)
+![Redis](https://img.shields.io/badge/Redis-0d1117?style=flat-square&logo=redis&logoColor=DC382D)
+![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6)
+![Tailwind](https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38B2AC)
+![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28)
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ED)
 
 ---
 
-## 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=devrahuljourney&theme=dark&hide_border=false&include_all_commits=true&count_private=true" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=devrahuljourney&theme=dark&hide_border=false" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devrahuljourney&theme=dark&hide_border=false&layout=compact" />
-</p>
+### Activity
+
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=devrahuljourney&bg_color=0d1117&color=8b949e&line=58a6ff&point=58a6ff&hide_border=true&area=true&area_color=58a6ff)](https://github.com/devrahuljourney)
+
+</div>
 
 ---
 
-## 🔗 Connect with Me
-<p align="center">
-<a href="https://linkedin.com/in/devrahuljourney"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://twitter.com/devrahuljourney"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" /></a>
-<a href="https://leetcode.com/devrahuljourney"><img src="https://img.shields.io/badge/LeetCode-000?style=for-the-badge&logo=leetcode&logoColor=yellow" /></a>
-<a href="https://auth.geeksforgeeks.org/user/devrahuljourney"><img src="https://img.shields.io/badge/GeeksforGeeks-008000?style=for-the-badge&logo=geeksforgeeks&logoColor=white" /></a>
-</p>
+### Contribution Snake
 
-📂 [Portfolio](https://www.rahulverma.site)  
-📧 devrahulverma9162@gmail.com  
+<div align="center">
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devrahuljourney/devrahuljourney/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/devrahuljourney/devrahuljourney/output/github-snake.svg" />
+  <img alt="github contribution snake" src="https://raw.githubusercontent.com/devrahuljourney/devrahuljourney/output/github-snake.svg" />
+</picture>
 
-## 🎯 Interests & Goals
-- 🚀 **Building scalable, user-focused products**
-- 🎨 **Creating micro-interactions that feel alive**
-- 🤖 **Exploring AI-assisted development**
-- 🧩 **Writing clean, maintainable code**
-- 📱 **Designing apps that solve real-world problems**
-
----
-
-## ✍️ Developer Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-
----
-
-[![](https://visitcount.itsvg.in/api?id=devrahuljourney&icon=5&color=0)](https://visitcount.itsvg.in)
+</div>
