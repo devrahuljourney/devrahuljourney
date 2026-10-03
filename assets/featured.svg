@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 48" width="800" height="48" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif">
-  <rect width="800" height="48" fill="#090909"/>
-  <text x="2" y="31" font-size="15" font-weight="600" fill="#f2f2ee" letter-spacing="2">FEATURED</text>
-  <rect x="96" y="22" width="684" height="1" fill="#232320"/>
-  <rect x="96" y="22" width="90" height="1" fill="#c7f94a"/>
-  <circle cx="790" cy="22.5" r="2.5" fill="#c7f94a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 40" width="800" height="40" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif">
+  <rect width="800" height="40" fill="#090909"/>
+  <text x="26" y="27" font-size="15" font-weight="600" letter-spacing="2" fill="#f2f2ee">FEATURED</text>
+  <circle cx="130" cy="22" r="2.5" fill="#c7f94a"/>
 </svg>
