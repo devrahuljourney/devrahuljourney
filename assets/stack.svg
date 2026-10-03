@@ -1,19 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300" font-family="'JetBrains Mono','Courier New',monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
   <defs>
-    <pattern id="sgrid" width="26" height="26" patternUnits="userSpaceOnUse">
-      <path d="M26 0H0V26" fill="none" stroke="#141b26" stroke-width="1"/>
-    </pattern>
+    <filter id="sgrain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.022 0"/></filter>
+    <style>.disp{font-family:'Space Grotesk','Segoe UI',system-ui,sans-serif}.mono{font-family:'JetBrains Mono','Courier New',monospace}</style>
   </defs>
-  <rect width="800" height="300" rx="12" fill="#0a0e16"/>
-  <rect width="800" height="300" rx="12" fill="url(#sgrid)" opacity="0.6"/>
-  <rect x="0.5" y="0.5" width="799" height="299" rx="12" fill="none" stroke="#1b2535"/>
+  <rect width="800" height="300" rx="14" fill="#090909"/>
+  <rect width="800" height="300" rx="14" fill="#fff" filter="url(#sgrain)"/>
+  <rect x="0.5" y="0.5" width="799" height="299" rx="14" fill="none" stroke="#232320"/>
 
-  <text x="26" y="40" font-size="16" font-weight="700" fill="#e6edf3">// <tspan fill="#22d3ee">STACK</tspan></text>
-  <text x="774" y="40" text-anchor="end" font-size="11" fill="#484f58">cat ~/.stack</text>
-  <line x1="26" y1="52" x2="774" y2="52" stroke="#1b2535"/>
+  <text x="26" y="40" class="disp" font-size="15" font-weight="600" fill="#f2f2ee" letter-spacing="2">STACK</text>
+  <circle cx="86" cy="35" r="2.5" fill="#c7f94a"/>
+  <text x="774" y="40" text-anchor="end" class="mono" font-size="11" fill="#4c4c46">cat ~/.stack</text>
+  <line x1="26" y1="52" x2="774" y2="52" stroke="#232320"/>
 
-  <!-- row labels -->
-  <g font-size="12" fill="#58a6ff">
+  <g class="mono" font-size="12" fill="#c7f94a">
     <text x="26" y="81">lang/</text>
     <text x="26" y="121">frame/</text>
     <text x="26" y="161">db/</text>
@@ -21,54 +20,42 @@
     <text x="26" y="241">tools/</text>
   </g>
 
-  <!-- languages -->
-  <g font-size="11" text-anchor="middle">
-    <rect x="150" y="66" width="48"  height="22" rx="6" fill="#161b22"/><text x="174" y="81" fill="#ED8B00">Java</text>
-    <rect x="208" y="66" width="92"  height="22" rx="6" fill="#161b22"/><text x="254" y="81" fill="#F7DF1E">JavaScript</text>
-    <rect x="310" y="66" width="92"  height="22" rx="6" fill="#161b22"/><text x="356" y="81" fill="#3178C6">TypeScript</text>
-    <rect x="412" y="66" width="58"  height="22" rx="6" fill="#161b22"/><text x="441" y="81" fill="#E34F26">HTML5</text>
-    <rect x="480" y="66" width="52"  height="22" rx="6" fill="#161b22"/><text x="506" y="81" fill="#1572B6">CSS3</text>
+  <g class="mono" font-size="11" fill="#b4b2a6" text-anchor="middle">
+    <!-- languages -->
+    <rect x="150" y="66" width="48"  height="22" rx="6" fill="#141414"/><text x="174" y="81">Java</text>
+    <rect x="208" y="66" width="92"  height="22" rx="6" fill="#141414"/><text x="254" y="81">JavaScript</text>
+    <rect x="310" y="66" width="92"  height="22" rx="6" fill="#141414"/><text x="356" y="81">TypeScript</text>
+    <rect x="412" y="66" width="58"  height="22" rx="6" fill="#141414"/><text x="441" y="81">HTML5</text>
+    <rect x="480" y="66" width="52"  height="22" rx="6" fill="#141414"/><text x="506" y="81">CSS3</text>
+    <!-- frameworks -->
+    <rect x="150" y="106" width="56"  height="22" rx="6" fill="#141414"/><text x="178" y="121">React</text>
+    <rect x="216" y="106" width="100" height="22" rx="6" fill="#141414"/><text x="266" y="121">React Native</text>
+    <rect x="326" y="106" width="66"  height="22" rx="6" fill="#141414"/><text x="359" y="121">Next.js</text>
+    <rect x="402" y="106" width="58"  height="22" rx="6" fill="#141414"/><text x="431" y="121">Redux</text>
+    <rect x="470" y="106" width="66"  height="22" rx="6" fill="#141414"/><text x="503" y="121">Node.js</text>
+    <rect x="546" y="106" width="64"  height="22" rx="6" fill="#141414"/><text x="578" y="121">Express</text>
+    <rect x="620" y="106" width="72"  height="22" rx="6" fill="#141414"/><text x="656" y="121">Tailwind</text>
+    <!-- databases -->
+    <rect x="150" y="146" width="80" height="22" rx="6" fill="#141414"/><text x="190" y="161">MongoDB</text>
+    <rect x="240" y="146" width="56" height="22" rx="6" fill="#141414"/><text x="268" y="161">Redis</text>
+    <rect x="306" y="146" width="80" height="22" rx="6" fill="#141414"/><text x="346" y="161">Supabase</text>
+    <!-- cloud -->
+    <rect x="150" y="186" width="48" height="22" rx="6" fill="#141414"/><text x="174" y="201">AWS</text>
+    <rect x="208" y="186" width="58" height="22" rx="6" fill="#141414"/><text x="237" y="201">Vercel</text>
+    <rect x="276" y="186" width="62" height="22" rx="6" fill="#141414"/><text x="307" y="201">Netlify</text>
+    <rect x="348" y="186" width="80" height="22" rx="6" fill="#141414"/><text x="388" y="201">Hostinger</text>
+    <rect x="438" y="186" width="84" height="22" rx="6" fill="#141414"/><text x="480" y="201">Cloudinary</text>
+    <rect x="532" y="186" width="62" height="22" rx="6" fill="#141414"/><text x="563" y="201">Docker</text>
+    <!-- tools -->
+    <rect x="150" y="226" width="42" height="22" rx="6" fill="#141414"/><text x="171" y="241">Git</text>
+    <rect x="202" y="226" width="60" height="22" rx="6" fill="#141414"/><text x="232" y="241">GitHub</text>
+    <rect x="272" y="226" width="66" height="22" rx="6" fill="#141414"/><text x="305" y="241">VS Code</text>
+    <rect x="348" y="226" width="70" height="22" rx="6" fill="#141414"/><text x="383" y="241">Postman</text>
+    <rect x="428" y="226" width="56" height="22" rx="6" fill="#141414"/><text x="456" y="241">Figma</text>
+    <rect x="494" y="226" width="86" height="22" rx="6" fill="#141414"/><text x="537" y="241">WebSocket</text>
+    <rect x="590" y="226" width="76" height="22" rx="6" fill="#141414"/><text x="628" y="241">REST API</text>
   </g>
 
-  <!-- frameworks -->
-  <g font-size="11" text-anchor="middle">
-    <rect x="150" y="106" width="56"  height="22" rx="6" fill="#161b22"/><text x="178" y="121" fill="#61DAFB">React</text>
-    <rect x="216" y="106" width="100" height="22" rx="6" fill="#161b22"/><text x="266" y="121" fill="#61DAFB">React Native</text>
-    <rect x="326" y="106" width="66"  height="22" rx="6" fill="#161b22"/><text x="359" y="121" fill="#e6edf3">Next.js</text>
-    <rect x="402" y="106" width="58"  height="22" rx="6" fill="#161b22"/><text x="431" y="121" fill="#764ABC">Redux</text>
-    <rect x="470" y="106" width="66"  height="22" rx="6" fill="#161b22"/><text x="503" y="121" fill="#3fb950">Node.js</text>
-    <rect x="546" y="106" width="64"  height="22" rx="6" fill="#161b22"/><text x="578" y="121" fill="#e6edf3">Express</text>
-    <rect x="620" y="106" width="72"  height="22" rx="6" fill="#161b22"/><text x="656" y="121" fill="#38B2AC">Tailwind</text>
-  </g>
-
-  <!-- databases -->
-  <g font-size="11" text-anchor="middle">
-    <rect x="150" y="146" width="80" height="22" rx="6" fill="#161b22"/><text x="190" y="161" fill="#4ea94b">MongoDB</text>
-    <rect x="240" y="146" width="56" height="22" rx="6" fill="#161b22"/><text x="268" y="161" fill="#DC382D">Redis</text>
-    <rect x="306" y="146" width="80" height="22" rx="6" fill="#161b22"/><text x="346" y="161" fill="#3ECF8E">Supabase</text>
-  </g>
-
-  <!-- cloud -->
-  <g font-size="11" text-anchor="middle">
-    <rect x="150" y="186" width="48" height="22" rx="6" fill="#161b22"/><text x="174" y="201" fill="#FF9900">AWS</text>
-    <rect x="208" y="186" width="58" height="22" rx="6" fill="#161b22"/><text x="237" y="201" fill="#e6edf3">Vercel</text>
-    <rect x="276" y="186" width="62" height="22" rx="6" fill="#161b22"/><text x="307" y="201" fill="#00C7B7">Netlify</text>
-    <rect x="348" y="186" width="80" height="22" rx="6" fill="#161b22"/><text x="388" y="201" fill="#673DE6">Hostinger</text>
-    <rect x="438" y="186" width="84" height="22" rx="6" fill="#161b22"/><text x="480" y="201" fill="#3448C5">Cloudinary</text>
-    <rect x="532" y="186" width="62" height="22" rx="6" fill="#161b22"/><text x="563" y="201" fill="#2496ED">Docker</text>
-  </g>
-
-  <!-- tools -->
-  <g font-size="11" text-anchor="middle">
-    <rect x="150" y="226" width="42" height="22" rx="6" fill="#161b22"/><text x="171" y="241" fill="#F05032">Git</text>
-    <rect x="202" y="226" width="60" height="22" rx="6" fill="#161b22"/><text x="232" y="241" fill="#e6edf3">GitHub</text>
-    <rect x="272" y="226" width="66" height="22" rx="6" fill="#161b22"/><text x="305" y="241" fill="#007ACC">VS Code</text>
-    <rect x="348" y="226" width="70" height="22" rx="6" fill="#161b22"/><text x="383" y="241" fill="#FF6C37">Postman</text>
-    <rect x="428" y="226" width="56" height="22" rx="6" fill="#161b22"/><text x="456" y="241" fill="#F24E1E">Figma</text>
-    <rect x="494" y="226" width="86" height="22" rx="6" fill="#161b22"/><text x="537" y="241" fill="#e6edf3">WebSocket</text>
-    <rect x="590" y="226" width="76" height="22" rx="6" fill="#161b22"/><text x="628" y="241" fill="#009688">REST API</text>
-  </g>
-
-  <line x1="26" y1="262" x2="774" y2="262" stroke="#1b2535"/>
-  <text x="26" y="282" font-size="11" fill="#484f58">coursework<tspan fill="#8b949e">  OOPs · Operating Systems · Computer Networks · DBMS</tspan></text>
+  <line x1="26" y1="262" x2="774" y2="262" stroke="#232320"/>
+  <text x="26" y="282" class="mono" font-size="11" fill="#4c4c46">coursework<tspan fill="#8a8a82">  OOPs · Operating Systems · Computer Networks · DBMS</tspan></text>
 </svg>

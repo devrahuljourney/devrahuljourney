@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 48" width="800" height="48" font-family="'JetBrains Mono','Courier New',monospace">
-  <rect width="800" height="48" fill="#0d1117"/>
-  <rect x="0" y="23" width="6" height="2" fill="#22d3ee"/>
-  <text x="20" y="31" font-size="16" font-weight="700" fill="#e6edf3">// <tspan fill="#22d3ee">LINKS</tspan></text>
-  <rect x="86" y="22" width="694" height="2" fill="#1b2535"/>
-  <rect x="86" y="22" width="120" height="2" fill="#22d3ee"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 48" width="800" height="48" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif">
+  <rect width="800" height="48" fill="#090909"/>
+  <text x="2" y="31" font-size="15" font-weight="600" fill="#f2f2ee" letter-spacing="2">LINKS</text>
+  <rect x="64" y="22" width="716" height="1" fill="#232320"/>
+  <rect x="64" y="22" width="90" height="1" fill="#c7f94a"/>
+  <circle cx="790" cy="22.5" r="2.5" fill="#c7f94a"/>
 </svg>

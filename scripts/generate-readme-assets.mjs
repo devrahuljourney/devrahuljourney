@@ -13,21 +13,24 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const USER = process.env.GH_USERNAME || "devrahuljourney";
 const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
 
-// ---- palette -------------------------------------------------------------
+// ---- palette (matches rahulverma.online dark mode) -----------------------
 const C = {
-  bg: "#0a0e16", panel: "#0d1117", tile: "#161b22", line: "#1b2535",
-  text: "#e6edf3", muted: "#8b949e", dim: "#484f58",
-  cyan: "#22d3ee", blue: "#58a6ff", purple: "#a371f7", green: "#3fb950",
-  amber: "#febc2e", magenta: "#ff3d8b",
+  bg: "#090909", panel: "#0e0e0e", tile: "#141414", line: "#232320",
+  text: "#f2f2ee", muted: "#8a8a82", dim: "#4c4c46", accent: "#c7f94a",
 };
-// building intensity ramp (top / left / right faces)
+const FONT_SANS = "'Inter','Segoe UI',system-ui,sans-serif";
+const FONT_DISP = "'Space Grotesk','Segoe UI',system-ui,sans-serif";
+const FONT_MONO = "'JetBrains Mono','Courier New',monospace";
+// building intensity ramp (top / left / right faces): dark -> lime
 const RAMP = [
-  ["#161b22", "#10141c", "#0c0f15"],
-  ["#1f6feb", "#1a5ac2", "#164a9e"],
-  ["#58a6ff", "#4588db", "#366fb8"],
-  ["#22d3ee", "#1cb0c6", "#1792a4"],
-  ["#a371f7", "#8a5ed6", "#724db3"],
+  ["#141414", "#101010", "#0c0c0c"],
+  ["#3a4a1e", "#2f3d18", "#263112"],
+  ["#6f8a2c", "#5c7324", "#4a5d1d"],
+  ["#9bbf3a", "#82a130", "#6a8427"],
+  ["#c7f94a", "#a9d43e", "#8bb033"],
 ];
+// language-bar shades: lime -> neutral
+const LANG_SHADES = ["#c7f94a", "#9bbf3a", "#6f8a2c", "#57564d", "#333330"];
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 // ---- data ----------------------------------------------------------------
@@ -110,12 +113,12 @@ function demoData() {
 function renderStats(d) {
   const W = 800, H = 230;
   const tiles = [
-    { label: "total stars", value: d.stars, color: C.amber },
-    { label: "contributions", value: d.contributions, color: C.green },
-    { label: "pull requests", value: d.prs, color: C.purple },
-    { label: "followers", value: d.followers, color: C.blue },
-    { label: "repositories", value: d.repos, color: C.cyan },
-    { label: "forks", value: d.forks, color: C.magenta },
+    { label: "total stars", value: d.stars, color: C.accent },
+    { label: "contributions", value: d.contributions, color: C.accent },
+    { label: "pull requests", value: d.prs, color: C.accent },
+    { label: "followers", value: d.followers, color: C.accent },
+    { label: "repositories", value: d.repos, color: C.accent },
+    { label: "forks", value: d.forks, color: C.accent },
   ];
   const tw = 120, gap = (W - 52 - tiles.length * tw) / (tiles.length - 1), ty = 66;
   let tileSvg = "";
@@ -123,10 +126,10 @@ function renderStats(d) {
     const x = 26 + i * (tw + gap);
     tileSvg += `
     <g>
-      <rect x="${x.toFixed(1)}" y="${ty}" width="${tw}" height="78" rx="10" fill="${C.tile}" stroke="${C.line}"/>
-      <rect x="${x.toFixed(1)}" y="${ty}" width="${tw}" height="3" rx="1.5" fill="${t.color}"/>
-      <text x="${(x + tw / 2).toFixed(1)}" y="${ty + 44}" text-anchor="middle" font-size="26" font-weight="700" fill="${t.color}">${t.value.toLocaleString()}</text>
-      <text x="${(x + tw / 2).toFixed(1)}" y="${ty + 64}" text-anchor="middle" font-size="10" fill="${C.muted}">${t.label}</text>
+      <rect x="${x.toFixed(1)}" y="${ty}" width="${tw}" height="78" rx="10" fill="${C.panel}" stroke="${C.line}"/>
+      <rect x="${(x + 16).toFixed(1)}" y="${ty + 18}" width="20" height="2" rx="1" fill="${t.color}"/>
+      <text x="${(x + tw / 2).toFixed(1)}" y="${ty + 46}" text-anchor="middle" font-family="${FONT_DISP}" font-size="26" font-weight="700" fill="${C.text}">${t.value.toLocaleString()}</text>
+      <text x="${(x + tw / 2).toFixed(1)}" y="${ty + 64}" text-anchor="middle" font-family="${FONT_SANS}" font-size="10" fill="${C.muted}">${t.label}</text>
     </g>`;
   });
 
@@ -135,19 +138,21 @@ function renderStats(d) {
   const barX = 26, barY = 176, barW = W - 52;
   let x = barX, segs = "", legend = "";
   d.langs.forEach((l, i) => {
+    const shade = LANG_SHADES[i] || C.muted;
     const w = (l.size / total) * barW;
-    segs += `<rect x="${x.toFixed(1)}" y="${barY}" width="${w.toFixed(1)}" height="12" fill="${l.color}"/>`;
+    segs += `<rect x="${x.toFixed(1)}" y="${barY}" width="${w.toFixed(1)}" height="12" fill="${shade}"/>`;
     const lx = barX + i * 150;
-    legend += `<circle cx="${lx + 5}" cy="203" r="4" fill="${l.color}"/><text x="${lx + 16}" y="207" font-size="10" fill="${C.muted}">${esc(l.name)} ${Math.round((l.size / total) * 100)}%</text>`;
+    legend += `<circle cx="${lx + 5}" cy="203" r="4" fill="${shade}"/><text x="${lx + 16}" y="207" font-family="${FONT_SANS}" font-size="10" fill="${C.muted}">${esc(l.name)} ${Math.round((l.size / total) * 100)}%</text>`;
     x += w;
   });
 
   const synced = new Date().toISOString().replace("T", " ").slice(0, 16) + " UTC";
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" font-family="'JetBrains Mono','Courier New',monospace">
-  <rect width="${W}" height="${H}" rx="12" fill="${C.panel}"/>
-  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="12" fill="none" stroke="${C.line}"/>
-  <text x="26" y="40" font-size="16" font-weight="700" fill="${C.text}">// <tspan fill="${C.green}">STATS</tspan></text>
-  <text x="774" y="40" text-anchor="end" font-size="10" fill="${C.dim}">synced ${synced}</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" font-family="${FONT_SANS}">
+  <rect width="${W}" height="${H}" rx="14" fill="${C.bg}"/>
+  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="14" fill="none" stroke="${C.line}"/>
+  <text x="26" y="40" font-family="${FONT_DISP}" font-size="15" font-weight="600" letter-spacing="2" fill="${C.text}">STATS</text>
+  <circle cx="86" cy="35" r="2.5" fill="${C.accent}"/>
+  <text x="774" y="40" text-anchor="end" font-family="${FONT_MONO}" font-size="10" fill="${C.dim}">synced ${synced}</text>
   <line x1="26" y1="52" x2="774" y2="52" stroke="${C.line}"/>
   ${tileSvg}
   <rect x="${barX}" y="${barY}" width="${barW}" height="12" rx="6" fill="${C.tile}"/>
@@ -197,11 +202,12 @@ function renderCity(d) {
     ? new Date(busiest.date + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })
     : "—";
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${FW} ${H}" width="${FW}" height="${H}" font-family="'JetBrains Mono','Courier New',monospace">
-  <rect width="${FW}" height="${H}" rx="12" fill="${C.bg}"/>
-  <rect x="0.5" y="0.5" width="${FW - 1}" height="${H - 1}" rx="12" fill="none" stroke="${C.line}"/>
-  <text x="26" y="40" font-size="16" font-weight="700" fill="${C.text}">// <tspan fill="${C.cyan}">CONTRIBUTION CITY</tspan></text>
-  <text x="774" y="40" text-anchor="end" font-size="11" fill="${C.muted}">${d.contributions.toLocaleString()} contributions · busiest ${niceDate} (${busiest.count})</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${FW} ${H}" width="${FW}" height="${H}" font-family="${FONT_SANS}">
+  <rect width="${FW}" height="${H}" rx="14" fill="${C.bg}"/>
+  <rect x="0.5" y="0.5" width="${FW - 1}" height="${H - 1}" rx="14" fill="none" stroke="${C.line}"/>
+  <text x="26" y="40" font-family="${FONT_DISP}" font-size="15" font-weight="600" letter-spacing="2" fill="${C.text}">CONTRIBUTION CITY</text>
+  <circle cx="214" cy="35" r="2.5" fill="${C.accent}"/>
+  <text x="774" y="40" text-anchor="end" font-family="${FONT_MONO}" font-size="11" fill="${C.muted}">${d.contributions.toLocaleString()} contributions · busiest ${niceDate} (${busiest.count})</text>
   <line x1="26" y1="52" x2="774" y2="52" stroke="${C.line}"/>
   <g transform="translate(${tx.toFixed(2)},${ty.toFixed(2)}) scale(${scale.toFixed(4)})">
     ${polys.join("")}
