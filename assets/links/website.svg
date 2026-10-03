@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 56" width="150" height="56" font-family="'JetBrains Mono','Courier New',monospace">
+  <rect x="2" y="2" width="146" height="52" rx="8" fill="#0d1117" stroke="#1b2535"/>
+  <rect x="2" y="2" width="146" height="52" rx="8" fill="none" stroke="#22d3ee" stroke-opacity="0.35"/>
+  <g transform="translate(20,28)" stroke="#22d3ee" stroke-width="1.6" fill="none">
+    <circle r="10"/>
+    <ellipse rx="4.5" ry="10"/>
+    <line x1="-10" y1="0" x2="10" y2="0"/>
+    <line x1="-8.5" y1="-5" x2="8.5" y2="-5"/>
+    <line x1="-8.5" y1="5" x2="8.5" y2="5"/>
+  </g>
+  <text x="42" y="26" font-size="12" font-weight="700" fill="#e6edf3">Website</text>
+  <text x="42" y="40" font-size="9" fill="#8b949e">rahulverma.site</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 48" width="800" height="48" font-family="'JetBrains Mono','Courier New',monospace">
+  <rect width="800" height="48" fill="#0d1117"/>
+  <rect x="0" y="23" width="6" height="2" fill="#a371f7"/>
+  <text x="20" y="31" font-size="16" font-weight="700" fill="#e6edf3">// <tspan fill="#a371f7">PROJECTS</tspan></text>
+  <rect x="112" y="22" width="668" height="2" fill="#1b2535"/>
+  <rect x="112" y="22" width="120" height="2" fill="#a371f7"/>
+</svg>

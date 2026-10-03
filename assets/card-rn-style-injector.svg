@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160" font-family="'JetBrains Mono','Courier New',monospace">
+  <defs><filter id="g4"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect x="2" y="2" width="396" height="156" rx="10" fill="#0d1117" stroke="#1b2535"/>
+  <rect x="2" y="2" width="5" height="156" rx="2" fill="#22d3ee"/>
+  <text x="26" y="34" font-size="17" font-weight="700" fill="#e6edf3" filter="url(#g4)">RN Style Injector</text>
+  <rect x="294" y="18" width="90" height="22" rx="11" fill="#22d3ee22" stroke="#22d3ee" stroke-opacity="0.5"/>
+  <text x="339" y="33" text-anchor="middle" font-size="10" fill="#22d3ee">350+ USERS</text>
+  <text x="26" y="68" font-size="12" fill="#8b949e">VS Code extension that auto-injects missing</text>
+  <text x="26" y="86" font-size="12" fill="#8b949e">StyleSheet entries. Trigger with Alt+S.</text>
+  <g font-size="10">
+    <rect x="26" y="112" width="86" height="22" rx="6" fill="#161b22"/><text x="69" y="127" text-anchor="middle" fill="#3178c6">TypeScript</text>
+    <rect x="120" y="112" width="96" height="22" rx="6" fill="#161b22"/><text x="168" y="127" text-anchor="middle" fill="#007acc">VS Code API</text>
+    <rect x="224" y="112" width="104" height="22" rx="6" fill="#161b22"/><text x="276" y="127" text-anchor="middle" fill="#61dafb">React Native</text>
+  </g>
+</svg>

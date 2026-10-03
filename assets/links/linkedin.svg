@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 56" width="150" height="56" font-family="'JetBrains Mono','Courier New',monospace">
+  <rect x="2" y="2" width="146" height="52" rx="8" fill="#0d1117" stroke="#1b2535"/>
+  <rect x="2" y="2" width="146" height="52" rx="8" fill="none" stroke="#58a6ff" stroke-opacity="0.35"/>
+  <g transform="translate(11,17)" fill="#58a6ff">
+    <rect width="22" height="22" rx="4"/>
+    <rect x="4" y="9" width="3.6" height="9" fill="#0d1117"/>
+    <circle cx="5.8" cy="5.5" r="2.2" fill="#0d1117"/>
+    <path d="M10 18V9h3.4v1.3c.5-.8 1.5-1.6 3-1.6 2.4 0 3.6 1.5 3.6 4.1V18h-3.5v-4.4c0-1.1-.4-1.8-1.4-1.8-.8 0-1.2.5-1.4 1-.1.2-.1.5-.1.8V18z" fill="#0d1117"/>
+  </g>
+  <text x="42" y="26" font-size="12" font-weight="700" fill="#e6edf3">LinkedIn</text>
+  <text x="42" y="40" font-size="9" fill="#8b949e">devrahuljourney</text>
+</svg>

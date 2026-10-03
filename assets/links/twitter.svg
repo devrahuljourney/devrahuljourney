@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 56" width="150" height="56" font-family="'JetBrains Mono','Courier New',monospace">
+  <rect x="2" y="2" width="146" height="52" rx="8" fill="#0d1117" stroke="#1b2535"/>
+  <rect x="2" y="2" width="146" height="52" rx="8" fill="none" stroke="#e6edf3" stroke-opacity="0.3"/>
+  <g transform="translate(11,16)">
+    <rect width="22" height="22" rx="4" fill="#e6edf3"/>
+    <path d="M6 5.5h3l3 4 3.3-4H18l-4.4 5.2L18.4 17h-3l-3.3-4.4L8.4 17H6.8l4.7-5.6z" fill="#0d1117"/>
+  </g>
+  <text x="42" y="26" font-size="12" font-weight="700" fill="#e6edf3">X</text>
+  <text x="42" y="40" font-size="9" fill="#8b949e">devrahuljourney</text>
+</svg>
