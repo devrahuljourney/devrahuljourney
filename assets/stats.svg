@@ -3,7 +3,7 @@
   <rect x="0.5" y="0.5" width="799" height="229" rx="14" fill="none" stroke="#232320"/>
   <text x="26" y="40" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" letter-spacing="2" fill="#f2f2ee">STATS</text>
   <circle cx="86" cy="35" r="2.5" fill="#c7f94a"/>
-  <text x="774" y="40" text-anchor="end" font-family="'JetBrains Mono','Courier New',monospace" font-size="10" fill="#4c4c46">synced 2026-10-09 09:04 UTC</text>
+  <text x="774" y="40" text-anchor="end" font-family="'JetBrains Mono','Courier New',monospace" font-size="10" fill="#4c4c46">synced 2026-10-10 08:29 UTC</text>
   <line x1="26" y1="52" x2="774" y2="52" stroke="#232320"/>
   
     <g>
@@ -15,7 +15,7 @@
     <g>
       <rect x="151.6" y="66" width="120" height="78" rx="10" fill="#0e0e0e" stroke="#232320"/>
       <rect x="167.6" y="84" width="20" height="2" rx="1" fill="#c7f94a"/>
-      <text x="211.6" y="112" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif" font-size="26" font-weight="700" fill="#f2f2ee">743</text>
+      <text x="211.6" y="112" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif" font-size="26" font-weight="700" fill="#f2f2ee">757</text>
       <text x="211.6" y="130" text-anchor="middle" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" fill="#8a8a82">contributions</text>
     </g>
     <g>
