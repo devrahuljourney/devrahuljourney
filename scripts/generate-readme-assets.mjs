@@ -5,7 +5,7 @@
 // schedule with a GitHub token. With no token the data panels fall back to
 // deterministic demo data so they always render.
 //
-// Look: editorial "paper & ink" — warm paper, near-black ink, brick red and
+// Look: editorial "paper & ink": warm paper, near-black ink, brick red and
 // blue accents, Montserrat ExtraBold display caps and DM Mono labels. Fonts are
 // embedded as base64 woff2 (latin subset) because GitHub serves SVGs through
 // <img>, which can't load external fonts.
@@ -13,6 +13,7 @@
 import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import * as art from "./illustrations.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const USER = process.env.GH_USERNAME || "devrahuljourney";
@@ -58,6 +59,7 @@ function sheet(W, H, body, { fonts = ["disp", "mono"], bg = C.paper, defs = "" }
   <defs>
     <style>${fonts.map(fontFace).join("")}${CLASSES}</style>
     <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.06 0"/></filter>
+    ${art.STICKER_FILTER}
     <clipPath id="sheet"><rect width="${W}" height="${H}" rx="16"/></clipPath>
     ${defs}
   </defs>
@@ -70,7 +72,7 @@ function sheet(W, H, body, { fonts = ["disp", "mono"], bg = C.paper, defs = "" }
 `;
 }
 
-// Greedy word wrap by an average glyph width (em fraction) — good enough for
+// Greedy word wrap by an average glyph width (em fraction); good enough for
 // short fixed copy, verified by rendering.
 function wrap(text, maxChars) {
   const lines = [];
@@ -85,65 +87,74 @@ function wrap(text, maxChars) {
 const tspans = (lines, x, lh) =>
   lines.map((l, i) => `<tspan x="${x}" dy="${i ? lh : 0}">${esc(l)}</tspan>`).join("");
 
-// ---- header ----------------------------------------------------------------
+// ---- header: sky fading into graph paper, stickers around the headline ----
 function renderHeader() {
-  const W = 800, H = 440;
-  const stamp = "AVAILABLE FOR FREELANCE · OPEN TO COLLAB · ";
+  const W = 800, H = 500;
+  const defs = `
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="${C.ink}" stroke-opacity="0.07"/></pattern>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6f98cf"/><stop offset="0.38" stop-color="#a9c0dd"/><stop offset="0.62" stop-color="${C.paper}" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeG" x1="0" y1="0" x2="0" y2="1"><stop offset="0.3" stop-color="#fff"/><stop offset="0.66" stop-color="#000"/></linearGradient>
+    <mask id="fade"><rect width="${W}" height="${H}" fill="url(#fadeG)"/></mask>
+    <filter id="clouds" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0055 0.012" numOctaves="5" seed="11"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 0.83  0 0 0 0 0.73  0 0 0 3.4 -1.4"/>
+    </filter>
+    <filter id="cloudsHi" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.016" numOctaves="4" seed="4"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 0.97  0 0 0 0 0.92  0 0 0 3.6 -1.75"/>
+    </filter>`;
+  const wire = "M-20,170 C110,120 260,170 210,250 C170,320 60,300 90,250 C130,190 260,330 330,420 C380,480 520,470 560,400 C600,330 690,300 740,350 C780,390 760,440 820,420";
   return sheet(W, H, `
-    <text x="36" y="46" class="d" font-size="17" fill="${C.ink}" letter-spacing="-0.4"><tspan x="36">rahul</tspan><tspan x="36" dy="17">verma</tspan></text>
-    <g class="m" font-size="12" fill="${C.ink}" letter-spacing="1">
-      <text x="456" y="54">ABOUT</text><text x="536" y="54">WORKS</text><text x="616" y="54">STACK</text><text x="696" y="54">CONNECT</text>
+    <rect width="${W}" height="${H}" fill="url(#grid)"/>
+    <g mask="url(#fade)">
+      <rect width="${W}" height="${H}" fill="url(#sky)"/>
+      <rect width="${W}" height="${H}" filter="url(#clouds)"/>
+      <rect width="${W}" height="${H}" filter="url(#cloudsHi)"/>
     </g>
-    <line x1="36" y1="86" x2="764" y2="86" stroke="${C.ink}" stroke-opacity="0.18"/>
+    <path d="${wire}" fill="none" stroke="${C.ink}" stroke-opacity="0.28" stroke-width="1.4"/>
 
-    <text x="30" y="214" class="d" font-size="138" fill="${C.ink}" letter-spacing="-6">BUILD</text>
-    <text x="30" y="338" class="d" font-size="138" fill="${C.ink}" letter-spacing="-6"><tspan fill="${C.red}">&amp;</tspan> SHIP</text>
+    ${art.sticker(art.phone(C), 168, 112, -14, 0.92)}
+    ${art.sticker(art.keyboard(C), 638, 98, 9, 1)}
+    <text x="34" y="42" class="d" font-size="19" fill="${C.ink}" letter-spacing="-0.8"><tspan x="34">rahul</tspan><tspan x="34" dy="17">verma</tspan></text>
 
-    <g transform="translate(664,236)">
-      <circle r="66" fill="${C.red}"/>
-      <path id="ring" d="M0,-50 a50,50 0 1,1 -0.01,0" fill="none"/>
-      <g>
-        <text class="m" font-size="10.6" fill="${C.paper}" letter-spacing="1.2"><textPath href="#ring">${stamp}</textPath></text>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
-      </g>
-      <text y="10" text-anchor="middle" class="d" font-size="30" fill="${C.paper}">RV</text>
-    </g>
+    <text x="312" y="272" text-anchor="end" class="d" font-size="86" fill="${C.ink}" letter-spacing="-3">BUILD</text>
+    ${art.sticker(art.codeCard(C), 396, 242, -2, 0.92)}
+    <text x="480" y="272" class="d" font-size="86" fill="${C.ink}" letter-spacing="-3">SHIP</text>
+    <text x="400" y="342" text-anchor="middle" class="d" font-size="46" fill="${C.ink}" letter-spacing="-1">CLEAN CODE, LATE NIGHTS<tspan fill="${C.red}">.</tspan></text>
+    <text x="400" y="372" text-anchor="middle" class="m" font-size="11" fill="${C.muted}" letter-spacing="1.5">FULL STACK DEVELOPER · MERN · REACT NATIVE</text>
 
-    <text x="38" y="380" class="m" font-size="14" fill="${C.ink}" letter-spacing="5">REAL PRODUCTS, REAL USERS.</text>
-    <line x1="36" y1="404" x2="764" y2="404" stroke="${C.ink}" stroke-opacity="0.18"/>
-    <g class="m" font-size="11" fill="${C.muted}" letter-spacing="1">
-      <text x="36" y="426">FULL STACK DEVELOPER — MERN · REACT NATIVE</text>
-      <text x="764" y="426" text-anchor="end" fill="${C.ink}">MEET RAHUL ↓</text>
-    </g>
-  `);
+    ${art.sticker(art.mug(C), 86, 436, -8, 0.9, art.mugSteam(C))}
+    ${art.sticker(art.stickyNote(C), 236, 438, 7, 0.85)}
+    ${art.sticker(art.duck(C), 712, 440, 8, 0.85)}
+    <text x="400" y="482" text-anchor="middle" class="m" font-size="12" fill="${C.ink}" letter-spacing="2">MEET RAHUL <tspan fill="${C.red}">↓</tspan></text>
+  `, { defs, fonts: ["disp", "semi", "mono"] });
 }
 
-// ---- about -----------------------------------------------------------------
-function renderAbout() {
+// ---- about ---------------------------------------------------------------
+function renderAbout(avatar) {
   const W = 800, H = 330;
   const para = wrap(
-    "A full stack developer working across MERN and React Native. I turn ambiguous ideas into products people actually ship and use — from screen-time apps to a VS Code extension 350+ developers rely on.",
+    "A full stack developer working across MERN and React Native. I turn ambiguous ideas into products people actually ship and use, from screen-time apps to a VS Code extension 350+ developers rely on.",
     58,
   );
   const now = wrap("Currently building CoSkill and ReThink, and open to freelance work and good collaborations.", 58);
   return sheet(W, H, `
     <text x="36" y="52" class="m" font-size="12" fill="${C.red}" letter-spacing="1">(ABOUT)</text>
     <text x="764" y="52" text-anchor="end" class="m" font-size="12" fill="${C.muted}" letter-spacing="1">01 / 05</text>
-    <text x="196" y="66" class="d" font-size="40" fill="${C.ink}" letter-spacing="-1.2">Hello, I'm Rahul.</text>
-    <text x="196" y="110" class="s" font-size="15.5" fill="${C.ink2}">${tspans(para, 196, 24)}</text>
-    <text x="196" y="${110 + para.length * 24 + 14}" class="s" font-size="15.5" fill="${C.muted}">${tspans(now, 196, 24)}</text>
-    <g transform="translate(196,${110 + (para.length + now.length) * 24 + 34})">
+    ${art.sticker(art.polaroid(C, avatar, "me, mid-deploy"), 104, 172, -5, 0.98)}
+    <g transform="translate(118,268) rotate(5)">
+      <rect x="-70" y="-17" width="140" height="34" rx="17" fill="${C.yellow}"/>
+      <text text-anchor="middle" y="4.5" class="m" font-size="11.5" fill="${C.ink}" letter-spacing="1">BASED IN INDIA</text>
+    </g>
+    <text x="216" y="66" class="d" font-size="40" fill="${C.ink}" letter-spacing="-1.2">Hello, I'm Rahul.</text>
+    <text x="216" y="110" class="s" font-size="15.5" fill="${C.ink2}">${tspans(para, 216, 24)}</text>
+    <text x="216" y="${110 + para.length * 24 + 14}" class="s" font-size="15.5" fill="${C.muted}">${tspans(now, 216, 24)}</text>
+    <g transform="translate(216,${110 + (para.length + now.length) * 24 + 34})">
       <rect width="4" height="40" fill="${C.blue}"/>
       <text x="20" y="16" class="m" font-size="13" fill="${C.blue}">“Ship it, watch people use it,</text>
       <text x="20" y="35" class="m" font-size="13" fill="${C.blue}"> then make it better.”</text>
-    </g>
-    <g transform="translate(96,210) rotate(-6)">
-      <rect x="-74" y="-18" width="148" height="36" rx="18" fill="${C.yellow}"/>
-      <text text-anchor="middle" y="5" class="m" font-size="12" fill="${C.ink}" letter-spacing="1">BASED IN INDIA</text>
-    </g>
-    <g transform="translate(92,262) rotate(5)">
-      <rect x="-50" y="-18" width="100" height="36" rx="18" fill="${C.ink}"/>
-      <text text-anchor="middle" y="5" class="m" font-size="12" fill="${C.paper}" letter-spacing="1">MERN · RN</text>
     </g>
   `, { fonts: ["disp", "semi", "mono"] });
 }
@@ -161,31 +172,31 @@ function renderSection({ label, title, count, index }) {
 // ---- project cards ---------------------------------------------------------
 const PROJECTS = [
   {
-    file: "card-rethink", wide: true, n: "01", title: "ReThink", kind: "MOBILE APP", sticker: "BUILDING", accent: C.red,
+    file: "card-rethink", art: art.phone, wide: true, n: "01", title: "ReThink", kind: "MOBILE APP", sticker: "BUILDING", accent: C.red,
     line: "Screen time management & control",
-    desc: "Track usage, set limits and take back control of your phone habits — built as a real, daily-use app.",
+    desc: "Track usage, set limits and take back control of your phone habits, built as a real, daily-use app.",
     tags: ["React Native", "Screen Time", "App Control"],
   },
   {
-    file: "card-coskill", n: "02", title: "CoSkill", kind: "PLATFORM", sticker: "BUILDING", accent: C.blue,
+    file: "card-coskill", art: art.swapCards, n: "02", title: "CoSkill", kind: "PLATFORM", sticker: "BUILDING", accent: C.blue,
     line: "Skill swaps that actually work",
     desc: "Connect, teach and learn real skills with people who have what you need.",
     tags: ["React Native", "Node.js", "MongoDB", "Redis"],
   },
   {
-    file: "card-edtech", n: "03", title: "EdTech", kind: "FULL STACK", sticker: "SHIPPED", accent: C.yellow,
+    file: "card-edtech", art: art.gradCap, n: "03", title: "EdTech", kind: "FULL STACK", sticker: "SHIPPED", accent: C.yellow,
     line: "A learning platform, end to end",
     desc: "Courses, payments, progress tracking and dashboards for students and instructors.",
     tags: ["React", "Node.js", "MongoDB", "Tailwind"],
   },
   {
-    file: "card-friendify", n: "04", title: "Friendify", kind: "SOCIAL", sticker: "REAL-TIME", accent: C.pink,
+    file: "card-friendify", art: art.chatBubbles, n: "04", title: "Friendify", kind: "SOCIAL", sticker: "REAL-TIME", accent: C.pink,
     line: "Chat and presence, live",
     desc: "A social app with real-time chat, live presence and instant notifications.",
     tags: ["React", "Socket.IO", "Node.js", "MongoDB"],
   },
   {
-    file: "card-rn-style-injector", n: "05", title: "RN Style Injector", kind: "DEV TOOL", sticker: "350+ USERS", accent: C.navy,
+    file: "card-rn-style-injector", art: art.editorKey, n: "05", title: "RN Style Injector", kind: "DEV TOOL", sticker: "350+ USERS", accent: C.navy,
     line: "Missing styles, injected for you",
     desc: "A VS Code extension that auto-fills StyleSheet entries. Trigger with Alt+S.",
     tags: ["TypeScript", "VS Code API", "React Native"],
@@ -209,9 +220,9 @@ function sticker(text, x, y, rot, fill) {
 }
 
 function renderCard(p) {
-  const W = p.wide ? 800 : 400, H = 290;
+  const W = p.wide ? 800 : 400, H = p.wide ? 290 : 310;
   const pad = 30;
-  const descLines = wrap(p.desc, p.wide ? 70 : 44);
+  const descLines = wrap(p.desc, p.wide ? 60 : 32);
   const titleSize = p.wide ? 52 : p.title.length > 12 ? 30 : 38;
   const titleY = p.wide ? 128 : 112;
   const lineY = titleY + (p.wide ? 30 : 26);
@@ -224,6 +235,7 @@ function renderCard(p) {
     <text x="${pad - 2}" y="${titleY}" class="d" font-size="${titleSize}" fill="${C.ink}" letter-spacing="${p.wide ? -2 : -1.2}">${esc(p.title)}</text>
     <text x="${pad}" y="${lineY}" class="s" font-size="${p.wide ? 16 : 14}" fill="${C.ink2}">${esc(p.line)}</text>
     <text x="${pad}" y="${descY}" class="s" font-size="12.5" fill="${C.muted}">${tspans(descLines, pad, 19)}</text>
+    ${p.wide ? art.sticker(p.art(C), 668, 158, 10, 0.92) : art.sticker(p.art(C), 316, 194, p.n % 2 ? 6 : -6, 0.9)}
     ${tagRow(p.tags, pad, tagsY)}
     <text x="${W - pad}" y="${p.wide ? H - 42 : titleY}" text-anchor="end" class="m" font-size="12" fill="${C.red}" letter-spacing="1">${p.wide ? "VIEW PROJECT ↗" : "VIEW ↗"}</text>
   `, { fonts: ["disp", "semi", "mono"] });
@@ -233,7 +245,7 @@ function renderCard(p) {
 function renderFeatured() {
   const W = 800, H = 270;
   return sheet(W, H, `
-    <text x="36" y="50" class="m" font-size="12" fill="${C.yellow}" letter-spacing="1">(FEATURED) — VS CODE MARKETPLACE</text>
+    <text x="36" y="50" class="m" font-size="12" fill="${C.yellow}" letter-spacing="1">(FEATURED) · VS CODE MARKETPLACE</text>
     <text x="764" y="50" text-anchor="end" class="m" font-size="12" fill="${C.dim}" letter-spacing="1">PUBLISHER rahul-dev</text>
     <text x="34" y="118" class="d" font-size="48" fill="${C.paper}" letter-spacing="-2">React Native</text>
     <text x="34" y="166" class="d" font-size="48" fill="${C.paper}" letter-spacing="-2">Style Injector<tspan fill="${C.red}">.</tspan></text>
@@ -289,7 +301,8 @@ function renderConnect() {
     <text x="36" y="84" class="m" font-size="13" fill="${C.muted}">A good product starts with a conversation.</text>
     <text x="30" y="150" class="d" font-size="54" fill="${C.ink}" letter-spacing="-2.4">Got an idea?</text>
     <text x="30" y="206" class="d" font-size="54" fill="${C.ink}" letter-spacing="-2.4">Let's <tspan fill="${C.red}">ship it.</tspan></text>
-    ${sticker("FREELANCE · COLLAB", 650, 170, -7, C.blue)}
+    ${art.sticker(art.paperPlane(C), 660, 112, -4, 1, art.planeTrail(C))}
+    ${sticker("FREELANCE · COLLAB", 640, 196, -7, C.blue)}
   `);
 }
 
@@ -475,7 +488,7 @@ function renderCity(d) {
   const busiest = d.days.reduce((a, b) => (b.count > a.count ? b : a), { count: -1 });
   const niceDate = busiest.date
     ? new Date(busiest.date + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })
-    : "—";
+    : "n/a";
 
   return sheet(FW, H, `
     <text x="36" y="44" class="m" font-size="12" fill="${C.red}" letter-spacing="1">(CONTRIBUTION CITY)</text>
@@ -485,6 +498,19 @@ function renderCity(d) {
       ${polys.join("")}
     </g>
   `);
+}
+
+// GitHub avatar as a data URI for the about polaroid; null -> monogram.
+async function fetchAvatar() {
+  try {
+    const res = await fetch(`https://github.com/${USER}.png?size=240`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const type = res.headers.get("content-type") || "image/png";
+    return `data:${type};base64,${Buffer.from(await res.arrayBuffer()).toString("base64")}`;
+  } catch (e) {
+    console.error("avatar fetch failed, using monogram:", e.message);
+    return null;
+  }
 }
 
 // ---- main ------------------------------------------------------------------
@@ -499,12 +525,13 @@ function renderCity(d) {
   }
   if (!data) { data = demoData(); source = source || "demo (fallback)"; }
 
+  const avatar = await fetchAvatar();
   const outDir = join(ROOT, "assets");
   mkdirSync(join(outDir, "links"), { recursive: true });
   const out = (name, svg) => writeFileSync(join(outDir, name), svg);
 
   out("header.svg", renderHeader());
-  out("about.svg", renderAbout());
+  out("about.svg", renderAbout(avatar));
   out("projects.svg", renderSection({ label: "SELECTED WORK", title: "WORKS", count: String(PROJECTS.length).padStart(2, "0"), index: "02 / 05" }));
   for (const p of PROJECTS) out(`${p.file}.svg`, renderCard(p));
   out("featured.svg", renderFeatured());
